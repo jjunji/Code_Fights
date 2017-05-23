@@ -1,0 +1,20 @@
+
+public class candiesMain {
+
+	public static void main(String[] args) {
+		
+		candiesMain main = new candiesMain();
+		System.out.println(main.candies(3, 10));
+		
+	}
+
+	int candies(int n, int m) {
+	    
+	    int result = 0;
+	    
+	    result = n * (m/n);
+	    
+	    return result;
+	}
+
+}

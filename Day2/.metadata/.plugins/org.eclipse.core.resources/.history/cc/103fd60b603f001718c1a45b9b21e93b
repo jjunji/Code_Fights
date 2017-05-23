@@ -1,0 +1,20 @@
+
+public class concatenateNumbersMain {
+
+	public static void main(String[] args) {
+		
+		concatenateNumbersMain main= new concatenateNumbersMain();
+		System.out.println(main.concatenateNumbers(12, 34));
+	}
+	
+	int concatenateNumbers(int a, int b) {
+
+
+	    String tot = a+""+b;
+	    
+	    int result = Integer.parseInt(tot);
+	    
+	    return result;
+	}
+
+}

@@ -1,0 +1,30 @@
+
+public class firstMultipleMain {
+
+	public static void main(String[] args) {
+		firstMultipleMain main= new firstMultipleMain();
+		int[] divisors = {2,3,4};
+		System.out.println(main.firstMultiple(divisors, 13));
+	}
+	
+	int firstMultiple(int[] divisors, int start) {
+	    
+	    int result = 1;
+	    
+	    for(int i=0; i<divisors.length; i++){
+	       if(divisors[i]/2 ==1){
+	           result = result * divisors[i];
+	       }else{
+	    	   result = result * divisors[i]/2;
+	       }
+	    }
+	    
+	    while(result < start){
+	    	result = result *2;
+	    }
+	    
+	    return result;
+    
+}
+
+}
