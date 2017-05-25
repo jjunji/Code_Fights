@@ -1,0 +1,27 @@
+
+public class halvingSumMain {
+
+	public static void main(String[] args) {
+		
+		halvingSumMain main = new halvingSumMain();
+		System.out.println(main.halvingSum(25));
+		
+
+	}
+	
+	int halvingSum(int n) {
+
+		int result = n;
+		
+		for(int i=1; i < n; i++){
+			i = i*2;
+			result = result + n/i;
+			System.out.println("i" + i);
+			System.out.println("r" + result);
+			i--;
+		}
+		
+		return result;
+	}
+
+}
